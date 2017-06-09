@@ -3,6 +3,7 @@
   <head>
     <title>ring.info</title>
     <link rel="stylesheet" href="/material-components-web/dist/material-components-web.css">
+    <link href="styles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
@@ -12,11 +13,60 @@
       <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
     </div>
     <nav id="basic-tab-bar" class="mdc-tab-bar">
-      <a class="mdc-tab mdc-tab--active" href="#one">Home</a>
-      <a class="mdc-tab" href="#two">Merchandise</a>
-      <a class="mdc-tab" href="#three">About Us</a>
+      <a class="mdc-tab mdc-tab--active" href="#one">Info</a>
+      <a class="mdc-tab" href="#two">Calendar</a>
+      <a class="mdc-tab" href="#three">Weather</a>
       <span class="mdc-tab-bar__indicator"></span>
     </nav>
+
+
+<div class="demo-grid mdc-layout-grid max-width">
+
+
+  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-status">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">$TrackStatus</h1>
+          <h2 class="mdc-card__subtitle">$Time reamining?</h2>
+        </section>
+      </div>
+  </div>
+
+
+  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-info">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">$TrackInfo</h1>
+          <h2 class="mdc-card__subtitle">$Sections[]?</h2>
+        </section>
+      </div>
+  </div>
+
+</div>
+
+
+<div class="demo-grid mdc-layout-grid max-width">
+
+  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-hours">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">$OpenHours</h1>
+          <h2 class="mdc-card__subtitle">$PricePerLap?</h2>
+        </section>
+      </div>
+  </div>
+
+  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-cars">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">$CarsOnTrack</h1>
+          <h2 class="mdc-card__subtitle">$1000?</h2>
+        </section>
+      </div>
+  </div>
+
+
+</div>
     <script src="/material-components-web/dist/material-components-web.js"></script>
     <script>
       window.mdc.autoInit()
