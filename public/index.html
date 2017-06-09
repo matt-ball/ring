@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <title>ring.info</title>
+    <link rel="stylesheet" href="/material-components-web/dist/material-components-web.css">
+  </head>
+  <body>
+    <h2 class="mdc-typography--display2">Hello, Material Components!</h2>
+    <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+      <input type="text" class="mdc-textfield__input" id="demo-input">
+      <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
+    </div>
+    <nav id="basic-tab-bar" class="mdc-tab-bar">
+      <a class="mdc-tab mdc-tab--active" href="#one">Home</a>
+      <a class="mdc-tab" href="#two">Merchandise</a>
+      <a class="mdc-tab" href="#three">About Us</a>
+      <span class="mdc-tab-bar__indicator"></span>
+    </nav>
+    <script src="/material-components-web/dist/material-components-web.js"></script>
+    <script>
+      window.mdc.autoInit()
+      window.mdc.tabs.MDCTabBar.attachTo(document.querySelector('#basic-tab-bar'))
+    </script>
+  </body>
+</html>
