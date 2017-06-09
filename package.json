@@ -1,0 +1,25 @@
+{
+  "name": "ring",
+  "version": "0.0.1",
+  "description": "A comprehensive Nurburgring app",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-ball/ring.git"
+  },
+  "keywords": [
+    "nurburgring"
+  ],
+  "author": "Matt Ball & Matthew Oliver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt-ball/ring/issues"
+  },
+  "homepage": "https://github.com/matt-ball/ring#readme",
+  "dependencies": {
+    "material-components-web": "^0.12.1"
+  }
+}
