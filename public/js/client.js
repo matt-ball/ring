@@ -11,9 +11,6 @@ function append (data, ringinfo) {
 
   $('.vehiclesOnTrack').text(`Cars: ${data.carsOnTrack} | Bikes: ${data.bikesOnTrack}`)
 
-  if (data.nordschleifeIsOpenedToday) {
-    $('.open-hours').text(`Nordschleife: ${data.nordschleifeDescription}`)
-  } else {
-    $('.open-hours').text('Nordschleife: Closed')
-  }
+  const openingHours = data.nordschleifeDescription.split(' Uhr')[0] || 'Closed'
+  $('.open-hours').text(`Nordschleife: ${openingHours}`)
 }
