@@ -13,7 +13,6 @@ module.exports = async function status () {
         nords: openStatus.nords && !trackStatus.data.data.trackInfo.closure
       }
     })
-
     return data
   }
 }
@@ -61,3 +60,4 @@ function isOpen (today, times) {
     return false
   }
 }
+
