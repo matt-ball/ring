@@ -12,6 +12,6 @@ function append (data, ringinfo) {
   if (data.nordschleifeIsOpenedToday = true) {
   	$('.open-hours').append(data.nordschleifeDescription)
   } else {
-  		$('.open-hours').text('Track is not open today.')
+  	$('.open-hours').text('Track is not open today.')
   }
 }
