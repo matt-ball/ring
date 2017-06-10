@@ -49,10 +49,11 @@ async function trackOpen () {
 }
 
 function isOpen (today, times) {
-  const now = new Date()
+  const hour = 60 * 1000 * 60
+  const now = Date.now()
   const { open, close } = times
-  const openDate = new Date(`${today} ${open}`)
-  const closeDate = new Date(`${today} ${close}`)
+  const openDate = new Date(`${today} ${open}`).getTime() - hour
+  const closeDate = new Date(`${today} ${close}`).getTime() - hour
 
   if (now >= openDate && now < closeDate) {
     return true
