@@ -21,20 +21,20 @@ module.exports = async function status () {
 async function trackOpen () {
   const now = new Date()
   const today = now.toISOString().split('T')[0]
-  const month = months[now.getMonth()]
+  const month = months[now.getMonth()] + ' ' + now.getFullYear().toString()
   const calendar = await axios.get('https://www.greenhelldriving.nuerburgring.de/api/v1/common/calendar')
 
   if (calendar) {
-    const gp = calendar.data.data[0].months[month]
-    const nords = calendar.data.data[1].months[month]
+    const gp = calendar.data.data[0].months[month][today]
+    const nords = calendar.data.data[1].months[month][today]
     const data = {
       gp: {
-        open: gp[today].start + ':00',
-        close: gp[today].end + ':00'
+        open: gp.start + ':00',
+        close: gp.end + ':00'
       },
       nords: {
-        open: nords[today].start + ':00',
-        close: nords[today].end + ':00'
+        open: nords.start + ':00',
+        close: nords.end + ':00'
       }
     }
 
