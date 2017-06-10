@@ -4,14 +4,16 @@ $.get('/api/status').then(append)
 
 function append (data, ringinfo) {
   $('body').prepend(JSON.stringify(data))
-  $('.track-status').append('Nords:' + (data.trackOpen.nords ? 'Open' : 'Closed'))
-  $('.gp-status').append(' GP:' + (data.trackOpen.gp ? 'Open' : 'Closed'))
-  $('.carsOnTrack').append('Cars:' + data.carsOnTrack)
-  $('.bikesOnTrack').append(' Bikes:' + data.bikesOnTrack)
-  $('.vehiclesOnTrack').append(' Vehicles:' + data.vehiclesOnTrack)
+
+  const nordsOpen = data.trackOpen.nords ? 'Open' : 'Closed'
+  const gpOpen = data.trackOpen.gp ? 'Open' : 'Closed'
+  $('.track-status').text(`Nordschleife: ${nordsOpen} | GP: ${gpOpen}`)
+
+  $('.vehiclesOnTrack').append(`Cars: ${data.carsOnTrack} | Bikes: ${data.bikesOnTrack}`)
+
   if (data.nordschleifeIsOpenedToday) {
-  	$('.open-hours').append(data.nordschleifeDescription)
+    $('.open-hours').text(`Nordschleife: ${data.nordschleifeDescription}`)
   } else {
-  	$('.open-hours').text('Track is not open today.')
+    $('.open-hours').text('Nordschleife: Closed')
   }
 }
