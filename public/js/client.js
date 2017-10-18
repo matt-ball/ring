@@ -8,15 +8,21 @@ function append (data) {
   const nordsOpen = data.trackOpen.nords ? 'Open' : 'Closed'
   const gpOpen = data.trackOpen.gp ? 'Open' : 'Closed'
   const sectionInfo = data.trackInfo.sections
-  const trackInfo = data.trackInfo.text
-  let openingHours = data.nordschleifeDescription.split(' Uhr')[0]
+  const trackInfo = data.trackInfo.text || 'Closed'
+  const openingHours = data.times
+  let gpOpenTimes = 'Closed'
+  let nordsOpenTimes = 'Closed'
 
-  if (openingHours === 'geschlossen') {
-    openingHours = 'Closed'
+  if (data.trackOpen.gp) {
+    gpOpenTimes = `Open: ${openingHours.gp.open} Close: ${openingHours.gp.close}`
+  }
+
+  if (data.trackOpen.nords) {
+    nordsOpenTimes = `Open: ${openingHours.nords.open} Close: ${openingHours.nords.close}`
   }
 
   $('.track-status').text(`Nordschleife: ${nordsOpen} | GP: ${gpOpen}`)
   $('.vehiclesOnTrack').text(`Cars: ${data.carsOnTrack} | Bikes: ${data.bikesOnTrack}`)
-  $('.open-hours').text(`Nordschleife: ${openingHours}`)
-  $('.track-info').text(`Track Info: ${trackInfo}`)
+  $('.open-hours').text(`Nordschleife: ${nordsOpenTimes} | GP: ${gpOpenTimes}`)
+  $('.track-info').text(`${trackInfo}`)
 }

@@ -5,19 +5,24 @@ module.exports = async function status () {
   const trackStatus = await axios.get('https://www.greenhelldriving.nuerburgring.de/api/v1/common/trackInfo')
 
   if (trackStatus) {
-    const openStatus = await trackOpen()
+    const openingTimes = await getOpeningTimes()
+    const openStatus = trackOpen(openingTimes)
 
     const data = Object.assign({}, trackStatus.data.data, {
       trackOpen: {
         gp: openStatus.gp,
         nords: openStatus.nords && !trackStatus.data.data.trackInfo.closure
+      },
+      times: {
+        gp: openingTimes.gp,
+        nords: openingTimes.nords
       }
     })
     return data
   }
 }
 
-async function trackOpen () {
+async function getOpeningTimes () {
   const now = new Date()
   const today = now.toISOString().split('T')[0]
   const month = months[now.getMonth()] + ' ' + now.getFullYear().toString()
@@ -26,24 +31,21 @@ async function trackOpen () {
   if (calendar) {
     const gp = calendar.data.data[0].months[month][today]
     const nords = calendar.data.data[1].months[month][today]
-    const data = {
-      gp: {
-        open: gp.start + ':00',
-        close: gp.end + ':00'
-      },
-      nords: {
-        open: nords.start + ':00',
-        close: nords.end + ':00'
-      }
-    }
+    const data = createOpeningHours(gp, nords)
 
-    const gpOpen = isOpen(today, data.gp)
-    const nordsOpen = isOpen(today, data.nords)
+    return data
+  }
+}
 
-    return {
-      gp: gpOpen,
-      nords: nordsOpen
-    }
+function trackOpen (openingTimes) {
+  const now = new Date()
+  const today = now.toISOString().split('T')[0]
+  const gpOpen = isOpen(today, openingTimes.gp)
+  const nordsOpen = isOpen(today, openingTimes.nords)
+
+  return {
+    gp: gpOpen,
+    nords: nordsOpen
   }
 }
 
@@ -61,3 +63,15 @@ function isOpen (today, times) {
   }
 }
 
+function createOpeningHours (gp, nords) {
+  return {
+    gp: {
+      open: gp.start + ':00',
+      close: gp.end + ':00'
+    },
+    nords: {
+      open: nords.start + ':00',
+      close: nords.end + ':00'
+    }
+  }
+}
