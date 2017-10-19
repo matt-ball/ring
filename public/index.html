@@ -1,72 +1,65 @@
 <!DOCTYPE html>
 <html class="mdc-typography">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ring.info</title>
-    <link rel="stylesheet" href="/material-components-web/dist/material-components-web.css">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <nav id="basic-tab-bar" class="mdc-tab-bar">
-      <a class="mdc-tab mdc-tab--active" href="#one">Info</a>
-      <a class="mdc-tab" href="#two">Calendar</a>
-      <a class="mdc-tab" href="#three">Weather</a>
-      <span class="mdc-tab-bar__indicator"></span>
-    </nav>
-
-
-<div class="demo-grid mdc-layout-grid max-width">
-
-
-  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-status">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Track status</h1>
-          <h2 class="mdc-card__subtitle track-status"></h2>
-        </section>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">ring.info</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">ring.info</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
       </div>
-  </div>
-
-
-  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-info">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Track info</h1>
-          <h2 class="mdc-card__subtitle track-info">&nbsp;</h2>
-        </section>
-      </div>
-  </div>
-
-</div>
-
-
-<div class="demo-grid mdc-layout-grid max-width">
-
-  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-hours">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Opening hours</h1>
-          <h2 class="mdc-card__subtitle open-hours"></h2>
-        </section>
-      </div>
-  </div>
-
-  <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-cars">
-        <section class="mdc-card__primary">
-          <h1 class="mdc-card__title mdc-card__title--large">Vehicles on track</h1>
-          <h2 class="mdc-card__subtitle vehiclesOnTrack"></h2>
-        </section>
-      </div>
-  </div>
-
-
-</div>
-    <script src="/material-components-web/dist/material-components-web.js"></script>
-    <script>
-      window.mdc.autoInit()
-      window.mdc.tabs.MDCTabBar.attachTo(document.querySelector('#basic-tab-bar'))
-    </script>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col track-status-nords">
+              <strong>Nordschleife</strong><br>
+              <span></span>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col track-status-gp">
+              <strong>GP</strong><br>
+              <span></span>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col track-info"></div>
+            <div class="mdl-cell mdl-cell--2-col vehicle-cell">
+              <i class="material-icons">directions_car</i>
+              <p class="cars"></p>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col vehicle-cell">
+              <i class="material-icons">motorcycle</i>
+              <p class="bikes"></p>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col open-hours"></div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="/js/client.js"></script>
   </body>
 </html>
