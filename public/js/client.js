@@ -18,7 +18,6 @@ function append (data) {
     $('.track-status-gp').removeClass('track-status-closed')
     $('.track-status-gp').addClass('track-status-open')
   } else {
-
     $('.track-status-gp').removeClass('track-status-open')
     $('.track-status-gp').addClass('track-status-closed')
   }
@@ -37,5 +36,5 @@ function append (data) {
   $('.cars').text(data.carsOnTrack)
   $('.bikes').text(data.bikesOnTrack)
   $('.open-hours').html(`<strong>Nordschleife:</strong> ${nordsOpenTimes} | <strong>GP:</strong> ${gpOpenTimes}`)
-  $('.track-info').text(`${trackInfo}`)
+  $('.track-info').text(`${sectionInfo} ${trackInfo}`)
 }
