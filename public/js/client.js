@@ -9,12 +9,13 @@ function append (data) {
   const gpOpen = data.trackOpen.gp ? 'Open' : 'Closed'
   const sectionInfo = data.trackInfo.sections
   const trackInfo = data.trackInfo.text || 'Track clear'
-  const openingHours = data.times
+  const todaysOpeningHours = data.todayTimes
+  const openingTimes = data.openingTimes
   let gpOpenTimes = 'Shut today'
   let nordsOpenTimes = 'Shut today'
 
   if (data.trackOpen.gp) {
-    gpOpenTimes = `Open: ${openingHours.gp.open} Close: ${openingHours.gp.close}`
+    gpOpenTimes = `Open: ${todaysOpeningHours.gp.open} Close: ${todaysOpeningHours.gp.close}`
     $('.track-status-gp').removeClass('track-status-closed')
     $('.track-status-gp').addClass('track-status-open')
   } else {
@@ -23,7 +24,7 @@ function append (data) {
   }
 
   if (data.trackOpen.nords) {
-    nordsOpenTimes = `Open: ${openingHours.nords.open} Close: ${openingHours.nords.close}`
+    nordsOpenTimes = `Open: ${todaysOpeningHours.nords.open} Close: ${todaysOpeningHours.nords.close}`
     $('.track-status-nords').removeClass('track-status-closed')
     $('.track-status-nords').addClass('track-status-open')
   } else {
@@ -35,6 +36,23 @@ function append (data) {
   $('.track-status-gp span').text(gpOpen)
   $('.cars').text(data.carsOnTrack)
   $('.bikes').text(data.bikesOnTrack)
-  $('.open-hours').html(`<strong>Nordschleife:</strong> ${nordsOpenTimes} | <strong>GP:</strong> ${gpOpenTimes}`)
+  $('.today-open-hours').html(`<strong>Nordschleife:</strong> ${nordsOpenTimes} | <strong>GP:</strong> ${gpOpenTimes}`)
   $('.track-info').text(`${sectionInfo} ${trackInfo}`)
+
+  $.each(openingTimes, (track, trackDates) => {
+    const copy = {
+      gp: '',
+      nords: ''
+    }
+
+    $.each(trackDates, (date, data) => {
+      if (data.start === data.end) {
+        copy[track] = 'Closed'
+      } else {
+        copy[track] = `${data.start} - ${data.end}`
+      }
+
+      $(`.${track}-open`).append(`<div class="mdl-cell mdl-cell--4-col open-hours"><strong>${date}</strong><br>${copy[track]}</div>`)
+    })
+  })
 }

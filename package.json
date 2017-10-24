@@ -23,6 +23,7 @@
     "@material/tabs": "^0.2.0",
     "axios": "^0.16.2",
     "express": "^4.15.3",
+    "lodash": "^4.17.4",
     "material-components-web": "^0.12.1"
   }
 }

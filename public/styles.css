@@ -13,11 +13,11 @@ body {
 }
 
 .vehicle-cell {
-  height: 150px;
+  height: 100px;
 }
 
 .vehicle-cell i {
-  font-size: 84px;
+  font-size: 54px;
 }
 
 .track-status-open {
@@ -29,10 +29,34 @@ body {
 }
 
 .open-hours {
+  margin: 0;
+  width: 100%;
   background-color: #d9edf7;
+}
+
+.open-hours-title {
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  background-color: #d9edf7;
+  padding-bottom: 0;
 }
 
 .track-info {
   font-weight: bold;
   background-color: #fcf8e4;
+}
+
+.mdl-layout__header-row {
+  background-image: url('images/ring-info-icon.png');
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  font-family: Verdana;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.nords-open, .gp-open {
+  padding: 0;
 }
