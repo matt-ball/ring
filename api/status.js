@@ -74,7 +74,7 @@ async function getOpeningTimes (days) {
 
 function addDays (days) {
   const date = new Date()
-  date.setDate(date.getDate() + days)
+  date.setDate(date.getDate() + days + 1)
   return date
 }
 
