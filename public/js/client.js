@@ -5,39 +5,34 @@ $.get('/api/status').then(append)
 function append (data) {
   console.log(data)
 
-  const nordsOpen = data.trackOpen.nords ? 'Open' : 'Closed'
+  if (data.trackInfo.closure) {
+    data.trackOpen.nords = 'Incident - Closed'
+  } else {
+    data.trackOpen.nords = data.trackOpen.nords ? 'Open' : 'Closed'
+  }
+
+  const nordsOpen = data.trackOpen.nords
   const gpOpen = data.trackOpen.gp ? 'Open' : 'Closed'
   const sectionInfo = data.trackInfo.sections
   const trackInfo = data.trackInfo.text || 'Track clear'
   const todaysOpeningHours = data.todayTimes
   const openingTimes = data.openingTimes
-  let gpOpenTimes = 'Shut today'
-  let nordsOpenTimes = 'Shut today'
 
-  if (data.trackOpen.gp) {
-    gpOpenTimes = `Open: ${todaysOpeningHours.gp.open} Close: ${todaysOpeningHours.gp.close}`
-    $('.track-status-gp').removeClass('track-status-closed')
-    $('.track-status-gp').addClass('track-status-open')
-  } else {
-    $('.track-status-gp').removeClass('track-status-open')
-    $('.track-status-gp').addClass('track-status-closed')
-  }
-
-  if (data.trackOpen.nords) {
-    nordsOpenTimes = `Open: ${todaysOpeningHours.nords.open} Close: ${todaysOpeningHours.nords.close}`
-    $('.track-status-nords').removeClass('track-status-closed')
-    $('.track-status-nords').addClass('track-status-open')
-  } else {
-    $('.track-status-nords').removeClass('track-status-open')
-    $('.track-status-nords').addClass('track-status-closed')
-  }
-
-  $('.track-status-nords span').text(nordsOpen)
-  $('.track-status-gp span').text(gpOpen)
+  $('.track-status-gp span:first').text(gpOpen)
+  $('.track-status-nords span:first').text(nordsOpen)
+  $('.track-status-gp span:last').text(`${todaysOpeningHours.gp.open} - ${todaysOpeningHours.gp.close}`)
+  $('.track-status-nords span:last').text(`${todaysOpeningHours.nords.open} - ${todaysOpeningHours.nords.close}`)
   $('.cars').text(data.carsOnTrack)
   $('.bikes').text(data.bikesOnTrack)
-  $('.today-open-hours').html(`<strong>Nordschleife:</strong> ${nordsOpenTimes} | <strong>GP:</strong> ${gpOpenTimes}`)
-  $('.track-info').text(`${sectionInfo} ${trackInfo}`)
+  $('.track-info').html(`<strong>${trackInfo}</strong>`)
+
+  $.each(sectionInfo, (i, data) => {
+    if (i === 0) {
+      $('.track-info').append(`<br><br><strong>Incidents</strong>`)
+    }
+
+    $('.track-info').append(`<br>${data.from} - ${data.to}: ${data.infoText}`)
+  })
 
   $.each(openingTimes, (track, trackDates) => {
     const copy = {

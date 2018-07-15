@@ -12,13 +12,16 @@ module.exports = async function status () {
     const data = Object.assign({}, trackStatus.data.data, {
       trackOpen: {
         gp: openStatus.gp,
-        nords: openStatus.nords && !trackStatus.data.data.trackInfo.closure
+        nords: openStatus.nords
       },
       todayTimes: {
         gp: todaysOpeningTimes.gp,
         nords: todaysOpeningTimes.nords
       },
-      openingTimes: await getOpeningTimes(4)
+      openingTimes: await getOpeningTimes(4),
+      trackInfo: {
+        sections: _.uniqBy(trackStatus.data.data.trackInfo.sections, 'infoText')
+      }
     })
 
     return data
@@ -104,10 +107,10 @@ function trackOpen (openingTimes) {
 
 function isOpen (today, times) {
   const hour = 60 * 1000 * 60
-  const now = Date.now()
+  const now = Date.now() + (hour * 2)
   const { open, close } = times
-  const openDate = new Date(`${today} ${open}`).getTime() - hour
-  const closeDate = new Date(`${today} ${close}`).getTime() - hour
+  const openDate = new Date(`${today} ${open}`).getTime() + hour
+  const closeDate = new Date(`${today} ${close}`).getTime() + hour
 
   if (now >= openDate && now < closeDate) {
     return true
@@ -117,14 +120,24 @@ function isOpen (today, times) {
 }
 
 function createOpeningHours (gp, nords) {
+  if (gp.start === gp.end) {
+    gp.start = ''
+    gp.end = ''
+  }
+
+  if (nords.start === nords.end) {
+    nords.start = ''
+    nords.end = ''
+  }
+
   return {
     gp: {
-      open: gp.start + ':00',
-      close: gp.end + ':00'
+      open: gp.start,
+      close: gp.end
     },
     nords: {
-      open: nords.start + ':00',
-      close: nords.end + ':00'
+      open: nords.start,
+      close: nords.end
     }
   }
 }
