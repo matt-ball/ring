@@ -1,4 +1,56 @@
 {
+  "name": "ring",
+  "version": "0.0.1",
+  "description": "A comprehensive Nurburgring app",
+  "main": "index.js",
+  "scripts": {
+    "start": "gcloud app deploy",
+  },
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true,
+    "test": {
+      "app": {
+        "args": [
+          "app.js"
+        ],
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-ball/ring.git"
+  },
+  "keywords": [
+    "nurburgring"
+  ],
+  "author": "Matt Ball & Matthew Oliver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt-ball/ring/issues"
+  },
+  "homepage": "https://github.com/matt-ball/ring#readme",
+  "dependencies": {
+    "@material/tabs": "^0.2.0",
+    "axios": "^0.16.2",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "material-components-web": "^0.12.1"
+    "express": "4.16.2"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "2.2.1",
+    "ava": "0.25.0",
+    "supertest": "3.0.0"
+  },
+  "engines": {
+    "node": "8.x.x"
+  }
+}
+
+00000000000
+
+{
   "name": "nodejs-getting-started",
   "version": "1.0.0",
   "description": "End to end sample for running Node.js applications on Google Cloud Platform",
