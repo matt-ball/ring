@@ -4,7 +4,7 @@
   "description": "A comprehensive Nurburgring app",
   "main": "index.js",
   "scripts": {
-    "start": "gcloud app deploy",
+    "start": "gcloud app deploy"
   },
   "cloud-repo-tools": {
     "requiresKeyFile": true,
@@ -13,7 +13,7 @@
       "app": {
         "args": [
           "app.js"
-        ],
+        ]
       }
     }
   },
@@ -35,8 +35,7 @@
     "axios": "^0.16.2",
     "express": "^4.15.3",
     "lodash": "^4.17.4",
-    "material-components-web": "^0.12.1",
-    "express": "4.16.2"
+    "material-components-web": "^0.12.1"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "2.2.1",
