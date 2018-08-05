@@ -1,29 +1,66 @@
 {
-  "name": "ring",
-  "version": "0.0.1",
-  "description": "A comprehensive Nurburgring app",
-  "main": "index.js",
+  "name": "nodejs-getting-started",
+  "version": "1.0.0",
+  "description": "End to end sample for running Node.js applications on Google Cloud Platform",
+  "repository": "https://github.com/GoogleCloudPlatform/nodejs-getting-started",
+  "private": true,
   "scripts": {
-    "test": "make test"
+    "start": "node app.js",
+    "e2e": "repo-tools test deploy",
+    "test": "repo-tools test app",
+    "cover": "nyc --cache npm test; nyc report --reporter=html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matt-ball/ring.git"
-  },
-  "keywords": [
-    "nurburgring"
+  "author": "Google Inc.",
+  "contributors": [
+    {
+      "name": "Jon Wayne Parrott",
+      "email": "jonwayne@google.com"
+    },
+    {
+      "name": "Jonathan Simon",
+      "email": "jbsimon@google.com"
+    },
+    {
+      "name": "Jason Dobry",
+      "email": "jdobry@google.com"
+    },
+    {
+      "name": "Ace Nassri",
+      "email": "anassri@google.com"
+    }
   ],
-  "author": "Matt Ball & Matthew Oliver",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/matt-ball/ring/issues"
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true,
+    "test": {
+      "app": {
+        "args": [
+          "app.js"
+        ],
+        "msg": "Hello, world!"
+      }
+    }
   },
-  "homepage": "https://github.com/matt-ball/ring#readme",
+  "license": "Apache-2.0",
+  "semistandard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
   "dependencies": {
-    "@material/tabs": "^0.2.0",
-    "axios": "^0.16.2",
-    "express": "^4.15.3",
-    "lodash": "^4.17.4",
-    "material-components-web": "^0.12.1"
+    "express": "4.16.2"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "2.2.1",
+    "ava": "0.25.0",
+    "supertest": "3.0.0"
+  },
+  "engines": {
+    "node": "8.x.x"
   }
 }
