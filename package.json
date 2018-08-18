@@ -4,7 +4,8 @@
   "description": "A comprehensive Nurburgring app",
   "main": "index.js",
   "scripts": {
-    "start": "gcloud app deploy"
+    "start": "node app.js",
+    "deploy": "gcloud app deploy"
   },
   "cloud-repo-tools": {
     "requiresKeyFile": true,
@@ -31,16 +32,12 @@
   },
   "homepage": "https://github.com/matt-ball/ring#readme",
   "dependencies": {
-    "@material/tabs": "^0.2.0",
     "axios": "^0.16.2",
     "express": "^4.15.3",
-    "lodash": "^4.17.4",
-    "material-components-web": "^0.12.1"
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "@google-cloud/nodejs-repo-tools": "2.2.1",
-    "ava": "0.25.0",
-    "supertest": "3.0.0"
+    "@google-cloud/nodejs-repo-tools": "2.2.1"
   },
   "engines": {
     "node": "8.x.x"

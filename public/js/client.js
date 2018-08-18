@@ -26,13 +26,15 @@ function append (data) {
   $('.bikes').text(data.bikesOnTrack)
   $('.track-info').html(`<strong>${trackInfo}</strong>`)
 
-  $.each(sectionInfo, (i, data) => {
-    if (i === 0) {
-      $('.track-info').append(`<br><br><strong>Incidents</strong>`)
-    }
+  if (trackInfo !== 'Track clear') {
+    $.each(sectionInfo, (i, data) => {
+      if (i === 0) {
+        $('.track-info').append(`<br><br><strong>Incidents</strong>`)
+      }
 
-    $('.track-info').append(`<br>${data.from} - ${data.to}: ${data.infoText}`)
-  })
+      $('.track-info').append(`<br>${data.from} - ${data.to}: ${data.infoText}`)
+    })
+  }
 
   $.each(openingTimes, (track, trackDates) => {
     const copy = {
