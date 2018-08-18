@@ -14,3 +14,7 @@
 # [START runtime]
 runtime: nodejs8
 # [END runtime]
+handlers:
+- url: /.*
+  script: IGNORED
+  secure: always
