@@ -14,7 +14,7 @@ function append (data) {
   const nordsOpen = data.trackOpen.nords
   const gpOpen = data.trackOpen.gp ? 'Open' : 'Closed'
   const sectionInfo = data.trackInfo.sections
-  const trackInfo = data.trackInfo.text || 'Track clear'
+  const trackInfo = getTrackInfo(data)
   const todaysOpeningHours = data.todayTimes
   const openingTimes = data.openingTimes
 
@@ -26,7 +26,7 @@ function append (data) {
   $('.bikes').text(data.bikesOnTrack)
   $('.track-info').html(`<strong>${trackInfo}</strong>`)
 
-  if (trackInfo !== 'Track clear') {
+  if (data.trackInfo.closure) {
     $.each(sectionInfo, (i, data) => {
       if (i === 0) {
         $('.track-info').append(`<br><br><strong>Incidents</strong>`)
@@ -49,7 +49,21 @@ function append (data) {
         copy[track] = `${data.start} - ${data.end}`
       }
 
-      $(`.${track}-open`).append(`<div class="mdl-cell mdl-cell--4-col open-hours"><strong>${date}</strong><br>${copy[track]}</div>`)
+      $(`.${track}-open`).append(`
+        <div class="mdl-cell mdl-cell--4-col open-hours">
+          <strong>${date}</strong>
+          <br />
+          ${copy[track]}
+        </div>
+      `)
     })
   })
+}
+
+function getTrackInfo (data) {
+  if (data.trackInfo.closure || data.trackOpen.nords === 'Open') {
+    return data.trackInfo
+  } else {
+    return '-'
+  }
 }
