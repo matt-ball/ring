@@ -5,6 +5,8 @@ Install Google Cloud SDK to deploy:
 
 # Deployment
 
-SSH to compute engine instance
-`gcloud app deploy`
-note: `gcloud compoents update` may need to be used.. 
+SSH to compute engine instance:
+`make deploy`
+
+Note: `gcloud components update` may need to be used if the `gcloud app deploy` command fails.
+
