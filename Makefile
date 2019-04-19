@@ -6,7 +6,7 @@ bootstrap:
 	npm install
 
 deploy:
-	make lint
+	git pull
 	gcloud app deploy
 
 lint:
