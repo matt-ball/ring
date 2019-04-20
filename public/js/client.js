@@ -5,35 +5,41 @@ $.get('/api/status').then(append)
 function append (data) {
   console.log(data)
 
+  let currentStatus = {}
+
   if (data.trackInfo.closure) {
-    data.trackOpen.nords = 'Incident - Closed'
+    currentStatus.class = 'warn'
+    currentStatus.text = 'Incident - Closed'
+  } else if (data.trackOpen.nords) {
+    currentStatus.class = 'open'
+    currentStatus.text = 'Open'
   } else {
-    data.trackOpen.nords = data.trackOpen.nords ? 'Open' : 'Closed'
+    currentStatus.class = 'close'
+    currentStatus.text = 'Closed for the day'
   }
 
-  const nordsOpen = data.trackOpen.nords
-  const gpOpen = data.trackOpen.gp ? 'Open' : 'Closed'
+  const gpOpen = data.trackOpen.gp ? 'Open' : 'Closed for the day'
   const sectionInfo = data.trackInfo.sections
-  const trackInfo = getTrackInfo(data)
   const todaysOpeningHours = data.todayTimes
   const openingTimes = data.openingTimes
 
+  $('.track-status-gp').addClass(data.trackOpen.gp ? 'open' : 'close')
+  $('.track-status-nords').addClass(currentStatus.class)
   $('.track-status-gp span:first').text(gpOpen)
-  $('.track-status-nords span:first').text(nordsOpen)
+  $('.track-status-nords span:first').text(currentStatus.text)
   $('.track-status-gp span:last').text(`${todaysOpeningHours.gp.open} - ${todaysOpeningHours.gp.close}`)
   $('.track-status-nords span:last').text(`${todaysOpeningHours.nords.open} - ${todaysOpeningHours.nords.close}`)
-  $('.cars').text(data.carsOnTrack)
-  $('.bikes').text(data.bikesOnTrack)
-  $('.track-info').html(`<strong>${trackInfo}</strong>`)
 
-  if (data.trackInfo.closure) {
-    $.each(sectionInfo, (i, data) => {
-      if (i === 0) {
-        $('.track-info').append(`<br><br><strong>Incidents</strong>`)
-      }
+  if (currentStatus.class !== 'close') {
+    $('.vehicle-cell').removeClass('hide')
+    $('.bikes').text(data.bikesOnTrack)
+    $('.cars').text(data.carsOnTrack)
+  }
 
-      $('.track-info').append(`<br>${data.from} - ${data.to}: ${data.infoText}`)
-    })
+  if (currentStatus.class === 'warn') {
+    $('.track-info').removeClass('hide')
+    $('.track-info').append(`<strong>Incidents</strong><br><br>`)
+    $('.track-info').append(sectionInfo.join(', '))
   }
 
   $.each(openingTimes, (track, trackDates) => {
@@ -58,12 +64,4 @@ function append (data) {
       `)
     })
   })
-}
-
-function getTrackInfo (data) {
-  if (data.trackInfo.closure || data.trackOpen.nords === 'Open') {
-    return data.trackInfo
-  } else {
-    return '-'
-  }
 }

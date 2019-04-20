@@ -59,3 +59,21 @@ body {
 .nords-open, .gp-open {
   padding: 0;
 }
+
+.hide {
+  display: none;
+}
+
+.open {
+  color: #fff;
+  background: #28a745;
+}
+
+.warn {
+  background: #fcf8e4;
+}
+
+.close {
+  color: #fff;
+  background: #bf1319;
+}

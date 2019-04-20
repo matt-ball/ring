@@ -20,10 +20,11 @@ module.exports = async function status () {
       },
       openingTimes: await getOpeningTimes(4),
       trackInfo: {
-        sections: _.uniqBy(trackStatus.data.data.trackInfo.sections, 'infoText')
+        closure: trackStatus.data.data.trackInfo.closure,
+        sections: _.uniqBy(trackStatus.data.data.trackInfo.sections, 'infoText').map((val) => val.infoText)
       }
     })
-
+    console.log(data)
     return data
   }
 }
@@ -98,6 +99,8 @@ function trackOpen (openingTimes) {
   const today = now.toISOString().split('T')[0]
   const gpOpen = isOpen(today, openingTimes.gp)
   const nordsOpen = isOpen(today, openingTimes.nords)
+
+  console.log(nordsOpen)
 
   return {
     gp: gpOpen,
