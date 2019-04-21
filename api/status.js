@@ -24,7 +24,7 @@ module.exports = async function status () {
         sections: _.uniqBy(trackStatus.data.data.trackInfo.sections, 'infoText').map((val) => val.infoText)
       }
     })
-    console.log(data)
+
     return data
   }
 }
@@ -100,8 +100,6 @@ function trackOpen (openingTimes) {
   const gpOpen = isOpen(today, openingTimes.gp)
   const nordsOpen = isOpen(today, openingTimes.nords)
 
-  console.log(nordsOpen)
-
   return {
     gp: gpOpen,
     nords: nordsOpen
@@ -114,6 +112,10 @@ function isOpen (today, times) {
   const { open, close } = times
   const openDate = new Date(`${today} ${open}`).getTime() + hour
   const closeDate = new Date(`${today} ${close}`).getTime() + hour
+
+  console.log('now: ', now)
+  console.log('open: ', openDate)
+  console.log('close: ', closeDate)
 
   if (now >= openDate && now < closeDate) {
     return true
