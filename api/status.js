@@ -107,10 +107,11 @@ function trackOpen (openingTimes) {
 }
 
 function isOpen (today, times) {
+  const hour = 60 * 1000 * 60
   const now = Date.now()
   const { open, close } = times
-  const openDate = new Date(`${today} ${open}`).getTime()
-  const closeDate = new Date(`${today} ${close}`).getTime()
+  const openDate = new Date(`${today} ${open}`).getTime() - (hour * 2)
+  const closeDate = new Date(`${today} ${close}`).getTime() - (hour * 2)
 
   console.log('now: ', now)
   console.log('open: ', openDate)
