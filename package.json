@@ -34,7 +34,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.15.3",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.13"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "2.2.1",
