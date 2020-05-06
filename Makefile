@@ -6,6 +6,7 @@ bootstrap:
 	npm install
 
 deploy:
+        git reset --hard
 	git pull
 	gcloud app deploy
 
