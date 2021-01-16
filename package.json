@@ -33,6 +33,7 @@
   "homepage": "https://github.com/matt-ball/ring#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "dotenv": "^8.2.0",
     "express": "^4.15.3",
     "lodash": "^4.17.4"
   },
