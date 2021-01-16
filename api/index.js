@@ -1,20 +1,25 @@
 const status = require('./status')
-let latestCache = 0
+const calendar = require('./calendar')
 let cache = {}
 
 module.exports = async function api (req, res) {
   const { tab } = req.params
   const now = Date.now()
-  const cacheIsOld = latestCache < (now - 300000)
+
+  cache[tab] = cache[tab] || {}
+  cache[tab].time = cache[tab].time || 0
+
+  const cacheIsOld = cache[tab].time < (now - 300000)
 
   const routes = {
-    status
+    status,
+    calendar
   }
 
-  if (!latestCache || cacheIsOld) {
-    latestCache = Date.now()
-    cache[tab] = await routes[tab]()
+  if (cacheIsOld) {
+    cache[tab].time = now
+    cache[tab].result = await routes[tab]()
   }
 
-  res.send(cache[tab])
+  res.send(cache[tab].result)
 }

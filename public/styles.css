@@ -77,3 +77,15 @@ body {
   color: #fff;
   background: #bf1319;
 }
+
+.calendar-year button {
+  display: none !important;
+}
+
+#eventListToggler {
+  display: none;
+}
+
+#calendar {
+  margin-top: 20px;
+}

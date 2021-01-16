@@ -113,10 +113,6 @@ function isOpen (today, times) {
   const openDate = new Date(`${today} ${open}`).getTime() - (hour * 2)
   const closeDate = new Date(`${today} ${close}`).getTime() - (hour * 2)
 
-  console.log('now: ', now)
-  console.log('open: ', openDate)
-  console.log('close: ', closeDate)
-
   if (now >= openDate && now < closeDate) {
     return true
   } else {
