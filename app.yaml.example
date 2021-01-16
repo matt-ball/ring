@@ -19,4 +19,4 @@ handlers:
   script: auto
   secure: always
 env_variables:
-  WEATHER_API_KEY: "d3e40a79e141c0be014bce11ef7a3b99"
+  WEATHER_API_KEY: <openweatherapi key here>
