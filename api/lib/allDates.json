@@ -1,0 +1,1498 @@
+[
+  {
+      "id": "2021-04-02",
+      "date": "2021-04-02",
+      "name": "GP",
+      "type": "GP",
+      "description": "10:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-04-03",
+      "date": "2021-04-03",
+      "name": "GP",
+      "type": "GP",
+      "description": "09:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-04-04",
+      "date": "2021-04-04",
+      "name": "GP",
+      "type": "GP",
+      "description": "09:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-04-05",
+      "date": "2021-04-05",
+      "name": "GP",
+      "type": "GP",
+      "description": "09:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-04-06",
+      "date": "2021-04-06",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-04-13",
+      "date": "2021-04-13",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-04-20",
+      "date": "2021-04-20",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-05-18",
+      "date": "2021-05-18",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-05-25",
+      "date": "2021-05-25",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-06-22",
+      "date": "2021-06-22",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-06-29",
+      "date": "2021-06-29",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-07-13",
+      "date": "2021-07-13",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-07-20",
+      "date": "2021-07-20",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-07-27",
+      "date": "2021-07-27",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-08-03",
+      "date": "2021-08-03",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-09-14",
+      "date": "2021-09-14",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-09-21",
+      "date": "2021-09-21",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 20:00",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-09-29",
+      "date": "2021-09-29",
+      "name": "GP",
+      "type": "GP",
+      "description": "18:00 - 19:30",
+      "color": "#bfbfbf"
+  },
+  {
+      "id": "2021-03-06",
+      "date": "2021-03-06",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-07",
+      "date": "2021-03-07",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-14",
+      "date": "2021-03-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-21",
+      "date": "2021-03-21",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-22",
+      "date": "2021-03-22",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-23",
+      "date": "2021-03-23",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-24",
+      "date": "2021-03-24",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-25",
+      "date": "2021-03-25",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-28",
+      "date": "2021-03-28",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-29",
+      "date": "2021-03-29",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-30",
+      "date": "2021-03-30",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-03-31",
+      "date": "2021-03-31",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-01",
+      "date": "2021-04-01",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-02",
+      "date": "2021-04-02",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "10:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-03",
+      "date": "2021-04-03",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-04",
+      "date": "2021-04-04",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-05",
+      "date": "2021-04-05",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-06",
+      "date": "2021-04-06",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-07",
+      "date": "2021-04-07",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-08",
+      "date": "2021-04-08",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-09",
+      "date": "2021-04-09",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-11",
+      "date": "2021-04-11",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 15:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-12",
+      "date": "2021-04-12",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-13",
+      "date": "2021-04-13",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-14",
+      "date": "2021-04-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-15",
+      "date": "2021-04-15",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-17",
+      "date": "2021-04-17",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "18:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-18",
+      "date": "2021-04-18",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-19",
+      "date": "2021-04-19",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-20",
+      "date": "2021-04-20",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-22",
+      "date": "2021-04-22",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-23",
+      "date": "2021-04-23",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-25",
+      "date": "2021-04-25",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-26",
+      "date": "2021-04-26",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-28",
+      "date": "2021-04-28",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-04-29",
+      "date": "2021-04-29",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-01",
+      "date": "2021-05-01",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "18:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-02",
+      "date": "2021-05-02",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-05",
+      "date": "2021-05-05",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-06",
+      "date": "2021-05-06",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-10",
+      "date": "2021-05-10",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-11",
+      "date": "2021-05-11",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-12",
+      "date": "2021-05-12",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-13",
+      "date": "2021-05-13",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-14",
+      "date": "2021-05-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-15",
+      "date": "2021-05-15",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-16",
+      "date": "2021-05-16",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-17",
+      "date": "2021-05-17",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-18",
+      "date": "2021-05-18",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-20",
+      "date": "2021-05-20",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-22",
+      "date": "2021-05-22",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "12:30 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-23",
+      "date": "2021-05-23",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "12:30 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-24",
+      "date": "2021-05-24",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-26",
+      "date": "2021-05-26",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-27",
+      "date": "2021-05-27",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-28",
+      "date": "2021-05-28",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-29",
+      "date": "2021-05-29",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-05-30",
+      "date": "2021-05-30",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "10:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-08",
+      "date": "2021-06-08",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-09",
+      "date": "2021-06-09",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-10",
+      "date": "2021-06-10",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-12",
+      "date": "2021-06-12",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "10:30 - 14:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-13",
+      "date": "2021-06-13",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "10:30 - 14:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-14",
+      "date": "2021-06-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-15",
+      "date": "2021-06-15",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-17",
+      "date": "2021-06-17",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-18",
+      "date": "2021-06-18",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-19",
+      "date": "2021-06-19",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-20",
+      "date": "2021-06-20",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-21",
+      "date": "2021-06-21",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-22",
+      "date": "2021-06-22",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-23",
+      "date": "2021-06-23",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-24",
+      "date": "2021-06-24",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-26",
+      "date": "2021-06-26",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "18:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-27",
+      "date": "2021-06-27",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-28",
+      "date": "2021-06-28",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-06-30",
+      "date": "2021-06-30",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-01",
+      "date": "2021-07-01",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-02",
+      "date": "2021-07-02",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-04",
+      "date": "2021-07-04",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-05",
+      "date": "2021-07-05",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-06",
+      "date": "2021-07-06",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-07",
+      "date": "2021-07-07",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-08",
+      "date": "2021-07-08",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-10",
+      "date": "2021-07-10",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "18:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-11",
+      "date": "2021-07-11",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "18:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-12",
+      "date": "2021-07-12",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-14",
+      "date": "2021-07-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-15",
+      "date": "2021-07-15",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-16",
+      "date": "2021-07-16",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-17",
+      "date": "2021-07-17",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-18",
+      "date": "2021-07-18",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-19",
+      "date": "2021-07-19",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-20",
+      "date": "2021-07-20",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-21",
+      "date": "2021-07-21",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-22",
+      "date": "2021-07-22",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-25",
+      "date": "2021-07-25",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-26",
+      "date": "2021-07-26",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-27",
+      "date": "2021-07-27",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-29",
+      "date": "2021-07-29",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-30",
+      "date": "2021-07-30",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-07-31",
+      "date": "2021-07-31",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-01",
+      "date": "2021-08-01",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-02",
+      "date": "2021-08-02",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-03",
+      "date": "2021-08-03",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-04",
+      "date": "2021-08-04",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-05",
+      "date": "2021-08-05",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-06",
+      "date": "2021-08-06",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-07",
+      "date": "2021-08-07",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-08",
+      "date": "2021-08-08",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-09",
+      "date": "2021-08-09",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-11",
+      "date": "2021-08-11",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-12",
+      "date": "2021-08-12",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-14",
+      "date": "2021-08-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "13:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-15",
+      "date": "2021-08-15",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "13:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-16",
+      "date": "2021-08-16",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-17",
+      "date": "2021-08-17",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-18",
+      "date": "2021-08-18",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-19",
+      "date": "2021-08-19",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-20",
+      "date": "2021-08-20",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-21",
+      "date": "2021-08-21",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-22",
+      "date": "2021-08-22",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-23",
+      "date": "2021-08-23",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-24",
+      "date": "2021-08-24",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-26",
+      "date": "2021-08-26",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-27",
+      "date": "2021-08-27",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-29",
+      "date": "2021-08-29",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-30",
+      "date": "2021-08-30",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-08-31",
+      "date": "2021-08-31",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-01",
+      "date": "2021-09-01",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-03",
+      "date": "2021-09-03",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-04",
+      "date": "2021-09-04",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-05",
+      "date": "2021-09-05",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-06",
+      "date": "2021-09-06",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-08",
+      "date": "2021-09-08",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-09",
+      "date": "2021-09-09",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-12",
+      "date": "2021-09-12",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-13",
+      "date": "2021-09-13",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-14",
+      "date": "2021-09-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-15",
+      "date": "2021-09-15",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-16",
+      "date": "2021-09-16",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-17",
+      "date": "2021-09-17",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-19",
+      "date": "2021-09-19",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-20",
+      "date": "2021-09-20",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-21",
+      "date": "2021-09-21",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-23",
+      "date": "2021-09-23",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-25",
+      "date": "2021-09-25",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "18:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-26",
+      "date": "2021-09-26",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-29",
+      "date": "2021-09-29",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-09-30",
+      "date": "2021-09-30",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-01",
+      "date": "2021-10-01",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-03",
+      "date": "2021-10-03",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-04",
+      "date": "2021-10-04",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-06",
+      "date": "2021-10-06",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-07",
+      "date": "2021-10-07",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-10",
+      "date": "2021-10-10",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-11",
+      "date": "2021-10-11",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-12",
+      "date": "2021-10-12",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-14",
+      "date": "2021-10-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:30 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-15",
+      "date": "2021-10-15",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "17:15 - 19:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-16",
+      "date": "2021-10-16",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-17",
+      "date": "2021-10-17",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "10:00 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-22",
+      "date": "2021-10-22",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "13:45 - 18:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-23",
+      "date": "2021-10-23",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-24",
+      "date": "2021-10-24",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 18:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-10-31",
+      "date": "2021-10-31",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 17:00",
+      "color": "black"
+  },
+  {
+      "id": "2021-11-01",
+      "date": "2021-11-01",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 16:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-11-13",
+      "date": "2021-11-13",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "14:30 - 16:30",
+      "color": "black"
+  },
+  {
+      "id": "2021-11-14",
+      "date": "2021-11-14",
+      "name": "Nordschleife",
+      "type": "Nordschleife",
+      "description": "09:00 - 16:30",
+      "color": "black"
+  }
+]
