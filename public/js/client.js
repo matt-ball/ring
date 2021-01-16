@@ -22,6 +22,7 @@ function append (data) {
   const sectionInfo = data.trackInfo.sections
   const todaysOpeningHours = data.todayTimes
   const openingTimes = data.openingTimes
+  const weather = data.weather.weather
 
   $('.track-status-gp').addClass(data.trackOpen.gp ? 'open' : 'close')
   $('.track-status-nords').addClass(currentStatus.class)
@@ -43,6 +44,7 @@ function append (data) {
   }
 
   $.each(openingTimes, (track, trackDates) => {
+    let i = 0
     const copy = {
       gp: '',
       nords: ''
@@ -59,9 +61,15 @@ function append (data) {
         <div class="mdl-cell mdl-cell--4-col open-hours">
           <strong>${date}</strong>
           <br />
-          ${copy[track]}
+          <strong>${copy[track]}</strong>
+          <br />
+          <img src="http://openweathermap.org/img/wn/${weather[i].weather[0].icon}@2x.png" width="30%" height="30%">
+          <br />
+          H: ${weather[0].temp.max} &#x2103 | L: ${weather[0].temp.min} &#x2103
         </div>
       `)
+      i++
     })
   })
 }
+

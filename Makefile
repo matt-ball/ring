@@ -5,10 +5,15 @@ BIN = ./node_modules/.bin
 bootstrap:
 	npm install
 
-deploy:
-        git reset --hard
+deploy-prod:
+    git reset --hard
 	git pull
 	gcloud app deploy
+
+deploy:
+    git reset --hard
+	git pull
+	gcloud app deploy --no-promote
 
 lint:
 	$(BIN)/standard

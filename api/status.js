@@ -1,9 +1,16 @@
+require('dotenv').config()
 const _ = require('lodash')
 const axios = require('axios')
 const months = require('./lib/months')
 
+const apiKey = process.env.WEATHER_API_KEY
+const lat = "50.3463569"
+const lon = "6.9655368"
+const exclude = "minutely,hourly,alerts,current"
+
 module.exports = async function status () {
   const trackStatus = await axios.get('https://www.greenhelldriving.nuerburgring.de/api/v1/common/trackInfo')
+  const weather = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=${exclude}&appid=${apiKey}&units=metric`)
 
   if (trackStatus) {
     const todaysOpeningTimes = await getTodaysOpeningTimes()
@@ -22,6 +29,9 @@ module.exports = async function status () {
       trackInfo: {
         closure: trackStatus.data.data.trackInfo.closure,
         sections: _.uniqBy(trackStatus.data.data.trackInfo.sections, 'infoText').map((val) => val.infoText)
+      },
+      weather: {
+        weather: weather.data.daily
       }
     })
 
