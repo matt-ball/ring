@@ -6,12 +6,12 @@ bootstrap:
 	npm install
 
 deploy-prod:
-    git reset --hard
+	git reset --hard
 	git pull
 	gcloud app deploy
 
 deploy:
-    git reset --hard
+	git reset --hard
 	git pull
 	gcloud app deploy --no-promote
 
