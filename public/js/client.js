@@ -65,7 +65,7 @@ function append (data) {
           <br />
           <img src="https://openweathermap.org/img/wn/${weather[i].weather[0].icon}@2x.png" width="30%" height="30%">
           <br />
-          H: ${weather[i].temp.max} &#x2103 | L: ${weather[i].temp.min} &#x2103
+          H: ${weather[i].temp.max.toFixed(0)} &#x2103 | L: ${weather[i].temp.min.toFixed(0)} &#x2103
         </div>
       `)
       i++
