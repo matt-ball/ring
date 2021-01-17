@@ -63,7 +63,7 @@ function append (data) {
           <br />
           <strong>${copy[track]}</strong>
           <br />
-          <img src="http://openweathermap.org/img/wn/${weather[i].weather[0].icon}@2x.png" width="30%" height="30%">
+          <img src="https://openweathermap.org/img/wn/${weather[i].weather[0].icon}@2x.png" width="30%" height="30%">
           <br />
           H: ${weather[0].temp.max} &#x2103 | L: ${weather[0].temp.min} &#x2103
         </div>
