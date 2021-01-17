@@ -46,6 +46,10 @@ body {
   background-color: #fcf8e4;
 }
 
+.mdl-layout__header {
+  position: fixed;
+}
+
 .mdl-layout__header-row {
   background-image: url('images/ring-info-icon.png');
   background-position: 15px;
@@ -86,6 +90,38 @@ body {
   display: none;
 }
 
-#calendar {
-  margin-top: 20px;
+.pane {
+  display: inline-block;
+  width: 49.76% !important;
+  vertical-align: top;
+  margin-top: 70px !important;
+}
+
+.evo-calendar {
+  margin-top: 86px !important;
+}
+
+.mdl-layout__content {
+  width: 200%;
+}
+
+.pane-marker {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.pane-marker span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #ababab;
+}
+
+.pane-marker span.active {
+  background: black;
 }
