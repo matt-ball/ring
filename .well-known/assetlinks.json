@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "uk.co.matthew_oliver.ring.twa",
+                   "sha256_cert_fingerprints": ["C3:B4:19:5E:6A:7A:63:88:F7:B5:54:44:2E:6F:1C:B4:4E:46:AC:88:2B:5F:84:0F:AA:36:3D:AA:82:45:10:28"] }
+    }]
