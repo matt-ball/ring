@@ -40,7 +40,6 @@ module.exports = async function calendar () {
       })
     })
 
-    console.log(allDates)
     return allDates
   }
 }
