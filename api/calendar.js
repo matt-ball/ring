@@ -22,10 +22,12 @@ module.exports = async function calendar () {
 
     _.each(tracks, (track, trackName) => {
       _.each(track, (day, date) => {
-        if (!day.opened && !day.exclusion?.opened) return
+        const trackIsClosed = !day.opened && !day.exclusion?.opened
+        if (trackIsClosed) return
 
-        const open = day.exclusion.periods[0].start
-        const close = day.exclusion.periods[0].end
+        const [openPeriod] = day.exclusion.periods
+        const open = openPeriod.start
+        const close = openPeriod.end
 
         const mappedDay = {
           id: date,
