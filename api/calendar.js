@@ -1,38 +1,46 @@
-// const _ = require('lodash')
-// const axios = require('axios')
-const dates = require('./lib/allDates.json')
+const _ = require('lodash')
+const axios = require('axios')
 
+// expected format
+// {
+//   "id": "2021-04-02",
+//   "date": "2021-04-02",
+//   "name": "GP",
+//   "type": "GP",
+//   "description": "10:00 - 20:00",
+//   "color": "#bfbfbf"
+// }
 module.exports = async function calendar () {
-  return dates
-  // can be used to fetch a new calendar
-  // const calendar = await axios.get('https://www.greenhelldriving.nuerburgring.de/api/v1/common/calendar')
+  const calendar = await axios.get('https://nuerburgring.de/track_status')
 
-  // if (calendar) {
-  //   const allDates = []
-  //   const tracks = {
-  //     'GP': calendar.data.data[0].months,
-  //     'Nordschleife': calendar.data.data[1].months
-  //   }
+  if (calendar && calendar.data) {
+    const allDates = []
+    const tracks = {
+      'GP': calendar.data.ring_kartbahn.year_schedule,
+      'Nordschleife': calendar.data.nordschleife.year_schedule
+    }
 
-  //   _.each(tracks, (track, trackName) => {
-  //     _.each(track, (month) => {
-  //       _.each(month, (day, date) => {
-  //         const mappedDay = {
-  //           id: date,
-  //           date: date,
-  //           name: trackName,
-  //           type: trackName,
-  //           description: `${day.start} - ${day.end}`,
-  //           color: trackName === 'GP' ? '#bfbfbf' : 'black'
-  //         }
-  
-  //         if (day.start !== day.end) {
-  //           allDates.push(mappedDay)
-  //         }
-  //       })
-  //     })
-  //   })
+    _.each(tracks, (track, trackName) => {
+      _.each(track, (day, date) => {
+        if (!day.opened && !day.exclusion?.opened) return
 
-  //   return allDates
-  // }
+        const open = day.exclusion.periods[0].start
+        const close = day.exclusion.periods[0].end
+
+        const mappedDay = {
+          id: date,
+          date: date,
+          name: trackName,
+          type: trackName,
+          description: `${open} - ${close}`,
+          color: trackName === 'GP' ? '#bfbfbf' : 'black'
+        }
+
+        allDates.push(mappedDay)
+      })
+    })
+
+    console.log(allDates)
+    return allDates
+  }
 }
