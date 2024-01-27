@@ -9,8 +9,8 @@ const lon = "6.9655368"
 const exclude = "minutely,hourly,alerts,current"
 
 module.exports = async function status () {
-  const trackStatus = await axios.get('https://www.greenhelldriving.nuerburgring.de/api/v1/common/trackInfo')
-  const weather = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=${exclude}&appid=${apiKey}&units=metric`)
+  const trackStatus = false  // TODO fixup when track status is available
+  const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&exclude=${exclude}&appid=${apiKey}&units=metric`)
 
   if (trackStatus) {
     const todaysOpeningTimes = await getTodaysOpeningTimes()

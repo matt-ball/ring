@@ -1,6 +1,6 @@
 const $ = window.jQuery
 
-$.get('/api/status').then(append)
+// $.get('/api/status').then(append)
 
 function append (data) {
   console.log(data)
