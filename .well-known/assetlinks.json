@@ -1,5 +1,11 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target" : { "namespace": "android_app", "package_name": "uk.co.matthew_oliver.ring.twa",
-                   "sha256_cert_fingerprints": ["C3:B4:19:5E:6A:7A:63:88:F7:B5:54:44:2E:6F:1C:B4:4E:46:AC:88:2B:5F:84:0F:AA:36:3D:AA:82:45:10:28"] }
-    }]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "mjo.ringapp",
+      "sha256_cert_fingerprints":
+        ["24:41:06:F2:E7:19:BC:71:A8:E0:2C:D9:ED:5F:75:64:3F:6F:7D:04:80:B4:32:22:9A:C5:27:A7:25:D0:42:C7", "C3:B4:19:5E:6A:7A:63:88:F7:B5:54:44:2E:6F:1C:B4:4E:46:AC:88:2B:5F:84:0F:AA:36:3D:AA:82:45:10:28"]
+    }
+  }
+]
